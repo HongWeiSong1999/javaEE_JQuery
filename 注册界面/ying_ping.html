@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>应聘时空跑腿配送员，利用空余时间接单赚钱</title>
+  <link rel="shortcut icon" href="images/LQlogo.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-wrapper {
+      margin: 0 auto;
+      max-width: 580px;
+    }
+
+    header {
+      background: #ff3f36;
+    }
+
+    .form-box {
+      margin: 12px;
+      overflow: hidden;
+    }
+
+    .form-item {
+      margin-bottom: 24px;
+    }
+
+    .form-item:last-child {
+      margin: 0;
+    }
+
+    .form-label {
+      margin-bottom: 4px;
+      font-size: 14px;
+      color: #f85444;
+    }
+
+    .form-content {
+      height: 32px;
+      border: 1px solid #999;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .form-content input {
+      display: block;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      color: #333;
+      line-height: 32px;
+      padding: 0 12px;
+    }
+
+    .submit-btn {
+      margin: 12px;
+      height: 44px;
+      border-radius: 4px;
+      background: #f85444;
+      color: #fff;
+      line-height: 44px;
+      text-align: center;
+      margin-top: 36px;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+
+    .banner img{
+      display: block;
+      width: 557px;
+      height: 280px;
+    }
+
+    .pc-banner {
+      padding: 0 12px 0;
+    }
+
+    @media all and (min-width: 767px) {
+      .m-banner {
+        display: none;
+      }
+    }
+
+    @media all and (max-width: 767px) {
+      .pc-banner {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="app" class="main-wrapper">
+  <div class="banner pc-banner">
+    <img src="images/m_banner_1.jpg" alt="">
+  </div>
+  <div class="banner m-banner">
+    <img src="images/pc_banner_1.jpg" alt="">
+  </div>
+  <div class="form-box">
+    <div class="form-item">
+      <p class="form-label">姓名（必填）</p>
+      <div class="form-content">
+        <input type="text" placeholder="请输入姓名" v-model="params.name">
+      </div>
+    </div>
+    <div class="form-item">
+      <p class="form-label">联系方式（必填）</p>
+      <div class="form-content">
+        <input type="number" placeholder="请输入联系方式" v-model="params.phoneNumber">
+      </div>
+    </div>
+    <div class="form-item">
+      <p class="form-label">所在城市（必填）</p>
+      <div class="form-content">
+        <input type="text" placeholder="请输入所在城市" v-model="params.city">
+      </div>
+    </div>
+  </div>
+  <div class="submit-btn" @click="submit">确认提交</div>
+</div>
+</body>
+</html>

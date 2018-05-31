@@ -1,0 +1,9 @@
+@font-face{
+	font-family: 'FunSized';
+	src:url(../font/FunSized.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+h1{
+	font-family:'FunSized';
+}

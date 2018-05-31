@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>企业网站实例</title>
+<link href="css/登录注册.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/setHomeSetFav.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/登录验证.js"></script>
+
+</head>
+
+<body>
+<div class="top">
+  <div class="top_content">
+    <ul>
+      <li><a href="#">联系我们</a></li>
+      <li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+      <li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+    </ul>
+  </div>
+</div>
+<!--页面顶端top结束-->
+
+<div class="wrap">
+  <div  class="logo">
+    <div class="logo_left"><img src="images/logo.png" /></div>
+    <div class="logo_right"><img src="images/tel.jpg" width="28" height="28" />24小时服务热线：<span class="tel">123-456-7890</span></div>
+  </div>
+  <!--logo结束-->
+  
+  <div class="nav">
+    <div  class="nav_left"></div>
+    <div class="nav_mid">
+      <div class="nav_mid_left">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="代送下单_帮我买.html">代送下单</a></li>
+          <li><a href="news_list.html">新闻动态</a></li>
+          <li><a href="招聘配送员.html">招聘配送员</a></li>
+          <li><a href="ping_lun.html">评论区</a></li>
+          <li><a href="关于我们.html">关于我们</a></li>
+        </ul>
+      </div>
+      <!--nav_mid_left结束-->
+      <div class="nav_mid_right" style="width: 200px;margin-left: 100px;">
+        <!--<form action="" method="post">
+          <input type="text" class="search_text" />
+          <input type="text" class="search_text" x-webkit-speech />
+          
+        </form>-->
+        <li><a href="注册.html">登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>|</li>
+          <li><a href="登录.html">注册&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+      </div>
+      <!--nav_mid_right结束--> 
+    </div>
+    <!--导航主体nav_mid结束-->
+    <div class="nav_right"></div>
+  </div>
+  <!--nav结束-->
+  
+  <div id="ad" style="height: 490px;background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);">
+    <div style="width: 470px;height: 420px;margin-right: 30px;float: left">
+    <img src="images/登录左部图片.png" width="350px" height="350px" style="padding-left: 80px;margin-top: 70px;">
+	 </div>
+	<div style="width: 500px;height: 420px;float: right;">
+		<div style="width: 480px;height: 380px;background-color: rgba(243,243,243,1.00);margin-top: 10px;margin-left: -10px;-webkit-box-shadow:1px 1px 3px #292929;box-shadow:1px 1px 4px #292929; border-radius: 13px;margin-top: 50px;">
+		<div style="width: 480px;height: 70px;">
+			<img src="images/登录标题.jpg" style="width: 480px;height: 70px;">
+		</div>
+		<form method="post" action="#">
+       <div>
+		   <p style="margin-bottom: 7px;margin-top: 7px;"><label for="iskong" style="width: 370px;height: 30px;font-size: 16px;margin-left: 45px;margin-top: 20px;color: rgba(130,130,130,1.00);">账号：</label></p>
+            <input type="text" id="iskong" class="required" style="width: 350px;height: 25px;margin-left: 45px;">
+        </div>
+        <div>
+           	<p style="margin-bottom: 7px;margin-top: 7px;">
+            <label for="password" style="width: 370px;height: 30px;font-size: 16px;margin-left: 45px;margin-top: 20px;color: rgba(130,130,130,1.00);" >密码：</label></p>
+            <input type="password" id="password" class="required" style="width: 350px;height: 25px;margin-left: 45px;"/>
+        </div>
+			
+        <div>
+            <p style="margin-bottom: 7px;margin-top: 7px;">
+            <label style="width: 370px;height: 30px;font-size: 16px;margin-left: 45px;margin-top: 20px;color: rgba(130,130,130,1.00);">密保：</label></p>
+            <input type="text" id="identity" class="required" style="width: 350px;height: 25px;margin-left: 45px;"/>
+        </div>
+        <!--<div>
+            <p style="margin-bottom: 7px;margin-top: 7px;">
+				<label for="email" style="width: 370px;height: 30px;font-size: 16px;margin-left: 45px;margin-top: 20px;color: rgba(130,130,130,1.00);">邮箱号：</label></p>
+            <input type="text" id="email" class="required" style="width: 350px;height: 25px;margin-left: 45px;;" />
+        </div>
+       
+       
+        <div>
+            <p style="margin-bottom: 7px;margin-top: 7px;">
+				<label for="phone" style="width: 370px;height: 30px;font-size: 16px;margin-left: 45px;margin-top: 20px;color: rgba(130,130,130,1.00);" >手机号：</label></p>
+            <input type="text" id="phone" class="required" style="width: 350px;height: 25px;margin-left: 45px;"/>
+        </div>-->
+        
+        
+        <div style="margin-top: 15px;">
+            <input type="submit" value="提交" id="send" style="margin-left: 70px;width: 100px;height: 30px;background-color:rgba(235,67,67,1.00);color: whitesmoke;font-size: 15px;border-radius: 8px;" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="重置" id="res" style="margin-left: 68px;margin-top: 20px;width: 100px;height: 30px;background-color:rgba(235,67,67,1.00);color: whitesmoke;font-size: 15px;border-radius: 8px;" />
+        </div>
+    </form>
+    <script>
+        //为表单的必填文本框添加提示信息（选择form中的所有后代input元素）
+        $("form :input.required").each(function () {
+            //通过jquery api：$("HTML字符串") 创建jquery对象
+            var $required = $("<strong class='high'>*</strong>");
+            //添加到this对象的父级对象下
+            $(this).parent().append($required);
+        });
+
+        //为表单元素添加失去焦点事件
+        $("form :input").blur(function(){
+            var $parent = $(this).parent();
+            $parent.find(".hws").remove(); //删除以前的提醒元素（find()：查找匹配元素集中元素的所有匹配元素）
+             //验证身份证号码
+            if($(this).is("#identity")){
+                var identityVal = $.trim(this.value);
+                var regidentity = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+                if(identityVal== "" || (identityVal != "" && !regidentity.test(identityVal))){
+                    var errorhws = "";
+                    $parent.append("<span class='hws onError'>" + errorhws + "</span>");
+                }
+                else{
+                    var okhws="";
+                    $parent.find(".high").remove();
+                    $parent.append("<span class='hws onSuccess'>" + okhws + "</span>");
+                }
+            }
+			 //验证是否为空
+            if($(this).is("#iskong")){
+                var iskongVal = $.trim(this.value);
+                if(iskongVal== ""){
+                    var errorhws = "";
+                    $parent.append("<span class='hws onError'>" + errorhws + "</span>");
+                }
+                else{
+                    var okhws="";
+                    $parent.find(".high").remove();
+                    $parent.append("<span class='hws onSuccess'>" + okhws + "</span>");
+                }
+            }
+
+            //验证邮箱
+            if($(this).is("#email")){
+                var emailVal = $.trim(this.value);
+                var regEmail = /.+@.+\.[a-zA-Z]{2,4}$/;
+                if(emailVal== "" || (emailVal != "" && !regEmail.test(emailVal))){
+                    var errorhws = " 请输入正确的E-Mail住址";
+                    $parent.append("<span class='hws onError'>" + errorhws + "</span>");
+                }
+                else{
+                    var okhws=" 输入正确";
+                    $parent.find(".high").remove();
+                    $parent.append("<span class='hws onSuccess'>" + okhws + "</span>");
+                }
+            }
+           
+            
+            //验证手机号码
+            if($(this).is("#phone")){
+                var phoneVal = $.trim(this.value);
+                var CMCC = /(^((13[4-9]{1})|(147)|(15[0-2]{1})|(15[7-9]{1})|(178)|(18[2-4]{1})|(18[7-8]{1}))\d{8}$)|(^((1703)|(1705)|(1706))\d{7}$)/;//中国移动  
+                if(phoneVal== "" || (phoneVal != "" && !CMCC.test(phoneVal))
+                   ){
+                    var errorhws = " 请输入你的手机号";
+                    $parent.append("<span class='hws onError'>" + errorhws + "</span>");
+                }
+                else{
+                    var okhws=" 移动";
+                    $parent.find(".high").remove();
+                    $parent.append("<span class='hws onSuccess'>" + okhws + "</span>");
+                }
+            }
+            //验证QQ账号
+            if($(this).is("#QQ_ID")){
+                var QQ_IDVal = $.trim(this.value);
+                var regQQ_ID = /[1-9][0-9]{4,}/;
+                if(QQ_IDVal== "" || (QQ_IDVal != "" && !regQQ_ID.test(QQ_IDVal))){
+                    var errorhws = " 请输入QQ账号！";
+                    $parent.append("<span class='hws onError'>" + errorhws + "</span>");
+                }
+                else{
+                    var okhws=" 输入正确";
+                    $parent.find(".high").remove();
+                    $parent.append("<span class='hws onSuccess'>" + okhws + "</span>");
+                }
+            }
+            //验证密码
+            if($(this).is("#password")){
+                var passwordVal = $.trim(this.value);
+                var regpassword = /^[a-zA-Z]\w{5,17}$/;
+                if(passwordVal== "" || (passwordVal != "" && !regpassword.test(passwordVal))){
+                    var errorhws = "";
+                    $parent.append("<span class='hws onError'>" + errorhws + "</span>");
+                }
+                else{
+                    var okhws="";
+                    $parent.find(".high").remove();
+                    $parent.append("<span class='hws onSuccess'>" + okhws + "</span>");
+                }
+            }
+            
+        }).keyup(function(){
+            //triggerHandler 防止事件执行完后，浏览器自动为标签获得焦点
+            $(this).triggerHandler("blur"); 
+        }).focus(function(){
+            $(this).triggerHandler("blur");
+        });
+        
+        //点击重置按钮时，通过trigger()来触发文本框的失去焦点事件
+        $("#send").click(function(){
+            //trigger 事件执行完后，浏览器会为submit按钮获得焦点
+            $("form .required:input").trigger("blur"); 
+            var numError = $("form .onError").length;
+            if(numError){
+                return false;
+            }
+            alert("注册成功！");
+        });
+    </script>
+
+		
+	 </div>
+	  </div>
+  </div>
+  <!--ad结束-->
+  
+	<div class="list_main">
+		</div> <!--news_type结束-->
+	<!--<div class="guan_yu_wo_meng">
+		
+  </div>-->
+<!--最外层wrap结束  -->
+<div class="copyright">
+  <div class="copyright_content">
+    <ul>
+      <li>关于
+        <ul>
+          <li>品牌故事</li>
+          <li>联系我们</li>
+          <li>加入我们</li>
+          <li>版权声明</li>
+        </ul>
+      </li>
+      <li>我是商家
+        <ul>
+          <li>合作申请</li>
+          <li>商务洽谈</li>
+          <li>提交资料</li>
+          <li>签订合同</li>
+        </ul>
+      </li>
+      <li>关注
+        <ul>
+          <li>新浪微博</li>
+          <li>腾讯微博</li>
+          <li>微信公众号</li>
+          <li>QQ空间</li>
+        </ul>
+      </li>
+      <li>留言
+        <ul>
+          <li>意见反馈</li>
+          <li>问题留言</li>
+          <li>功能特色</li>
+          <li>在线客服</li>
+        </ul>
+      </li>
+      <li><img src="images/weixin.png" alt="微信关注" width="30" height="27" />微信关注
+        <ul>
+          <li><img src="images/qrcode.jpg" alt="扫描关注跑腿交易平台官方微信" width="102" height="102" /></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+	</div>
+  <!--copyright_content结束--> 
+	</div>
+</body>
+</html>

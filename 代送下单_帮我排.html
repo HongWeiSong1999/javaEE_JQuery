@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>企业网站实例</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/xia_dan.css" rel="stylesheet" type="text/css"/>
+<link href="css/弹出地图.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/setHomeSetFav.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=MORlm6V1KgSzfi0FkrOGxahKmQEEKosP"></script>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+ #allmap {width: 415px;height: 250px;overflow: hidden;margin:0;font-family:"微软雅黑";float: right;}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=MORlm6V1KgSzfi0FkrOGxahKmQEEKosP"></script>
+</head>
+
+<body>
+<div class="top">
+  <div class="top_content">
+    <ul>
+      <li><a href="#">联系我们</a></li>
+      <li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+      <li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+    </ul>
+  </div>
+</div>
+<!--页面顶端top结束-->
+
+<div class="wrap">
+  <div  class="logo">
+    <div class="logo_left"><img src="images/logo.png" /></div>
+    <div class="logo_right"><img src="images/tel.jpg" width="28" height="28" />24小时服务热线：<span class="tel">123-456-7890</span></div>
+  </div>
+  <!--logo结束-->
+  
+  <div class="nav">
+    <div  class="nav_left"></div>
+    <div class="nav_mid">
+       <li><a href="index.html">首页</a></li>
+          <li><a href="代送下单_帮我买.html">代送下单</a></li>
+          <li><a href="news_list.html">新闻动态</a></li>
+          <li><a href="招聘配送员.html">招聘配送员</a></li>
+          <li><a href="ping_lun.html">评论区</a></li>
+          <li><a href="关于我们.html">关于我们</a></li>
+      <!--nav_mid_left结束-->
+      <div class="nav_mid_right" style="width: 200px;margin-left: 180px;">
+        <!--<form action="" method="post">
+          <input type="text" class="search_text" />
+          <input type="text" class="search_text" x-webkit-speech />
+          
+        </form>-->
+        <li><a href="注册.html">登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>|</li>
+          <li><a href="登录.html">注册&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+      </div>
+      <!--nav_mid_right结束--> 
+    </div>
+    <!--导航主体nav_mid结束-->
+    <div class="nav_right"></div>
+  </div>
+  <!--nav结束-->
+  
+  <div class="ad" style="height: 1000px;background-color: rgba(235,235,235,1.00)">
+    <div class="bang_wo_pai" style="margin-bottom:10px;background-image:linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);">
+     <img src="images/下单1.png" width="50px" height="50px"/>
+		
+      <div class="bang_wo_mai_frist" style="border: none;">
+		  <label><p style="width: 70px;font-size: 15px;padding-top: 23px;padding-left: 10px;">排队类型</p></label>
+		    <div style="border: 1px solid black;width: 80px;height: 26px;margin-left: 90px;margin-right: 10px; text-align: center;padding-top: 10px;font-size: 14px;margin-top: -28px;background-color:#D8D8D8;border-radius: 10px;">
+		    	万能排队
+		    </div>
+		    <div style="border: 1px solid black;width: 80px;height: 26px;margin-left: 180px;margin-right: 10px; text-align: center;padding-top: 10px;font-size: 14px;margin-top: 5px;margin-top: -38px;background-color:#D8D8D8;border-radius: 10px;">
+		    	办事排队
+		    </div>
+		    <div style="border: 1px solid black;width: 80px;height: 26px;margin-left: 270px;margin-right: 10px; text-align: center;padding-top: 10px;font-size: 14px;margin-top: 5px;margin-top: -38px;background-color:#D8D8D8;border-radius: 10px;">
+		    	医院排队
+		    </div>
+		    <div style="border: 1px solid black;width: 80px;height: 26px;margin-left: 360px;margin-right: 10px; text-align: center;padding-top: 10px;font-size: 14px;margin-top: 5px;margin-top: -38px;background-color:#D8D8D8;border-radius: 10px;">
+		    	银行排队
+		    </div>
+		    <div style="border: 1px solid black;width: 80px;height: 26px;margin-left: 450px;margin-right: 10px; text-align: center;padding-top: 10px;font-size: 14px;margin-top: 5px;margin-top: -38px;background-color:#D8D8D8;border-radius: 10px;">
+		    	餐厅占座
+		    </div>
+		    <!--<div style="border: 1px solid black;width: 80px;height: 26px;margin-left: 450px;margin-right: 10px; text-align: center;padding-top: 10px;font-size: 14px;margin-top: 5px;margin-top: -38px">
+		    	
+		    </div>-->
+		    <!--<div style="border: 1px solid black;width: 80px;height: 26px;margin-left: 540px;margin-right: 10px; text-align: center;padding-top: 10px;font-size: 14px;margin-top: 5px;margin-top: -38px">
+		    	餐厅占座
+		    </div>-->
+		 </div>
+		 
+		 <div class="bang_wo_mai_second" style="border: none;">
+			 <label><p style="font-size: 15px;height:22px;width: 60px;padding: 10px;font-size: 15px;margin-top: 30px;">备注信息</p></label>
+			 <div style="height: 80px;width: 600px;border-color: rgba(221,221,221,1.00);float: right;margin-bottom: -50px;margin-right: 20px;margin-top: -65px;">
+			 <input placeholder="找人排队，托人办事，请填写你的备注信息" style="height: 80px;width: 600px;background-color: #fff;padding-left: 10px;font-size: 15px;">
+			  
+			 </div>
+		 </div>
+		 
+		 <div class="bang_wo_mai_third" style="border: none;">
+      		<label><p style="font-size: 15px;height:22px;width: 60px;padding: 10px;font-size: 15px;">排队地址</p></label>
+			 <div style="height: 28px;width: 600px;background-color: #fff;float: right;margin-bottom: -100px;margin-right: 20px;margin-top: -40px;">
+			 
+			  <p style="width: 60px;float: right;padding-top: 8px;"><a style="text-decoration: none;" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="images/地图定位.png" style="width: 50px;height: 40px;float: right;margin-top: -13px;"></a></p> 
+			 
+			 
+				 <div id="light" class="white_content"> 
+          <div style="width: 715px;height: 335px;margin-left: -10px;margin-bottom: -30px;">
+          	<div id="allmap1" style="width:715px;height: 335px;"></div>
+          </div>
+        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" ><p style="text-decoration: none;float: right;margin-top: -323px;font-size: 14px;">关闭</p></a></div> 
+        <div id="fade" class="black_overlay">
+            
+        </div> 
+			   
+			  </div>
+		 </div>
+		 
+		 <div class="bang_wo_mai_second" style="border: none;">
+      		<label><p style="font-size: 15px;height:22px;width: 60px;padding: 10px;font-size: 15px;">备注地址</p></label>
+			 <div style="height: 25px;width: 600px;background-color: #fff;float:right;margin-bottom: -100px;margin-right: 20px;margin-top: -35px;"> </div>
+			 <label><p style="font-size: 15px;height:22px;width: 60px;padding: 10px;font-size: 15px;">联系电话</p></label>
+			 <div style="height: 25px;width: 400px;background-color: #fff;float:right;margin-bottom: -100px;margin-right: 220px;margin-top: -35px;"> </div>
+		 </div>
+		 
+	  </div>
+	  <div class="bang_wo_mai_left" style="background-color: #fbed96">
+		  <a href="代送下单_帮我买.html" style="text-decoration: none;">
+		  		<div class="top1" style="background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);">
+            <img style="padding-top: 40px" src="images/下单_帮我买.png" width="46px" height="50px"/>
+             <p style="font-size: 19px;padding-bottom: 40px;padding-top: 20px;color: aqua">帮我买</p>
+           </div>
+		  </a>
+		  <a href="代送下单_帮我送.html" style="text-decoration: none;"><div>
+		  <div class="top3" style="background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);">
+             <img style="padding-top: 40px" src="images/下单_帮我送.png" width="46px" height="50px"/>
+             <p style="font-size: 19px;padding-bottom: 40px;padding-top: 20px;color: aqua">帮我送</p>
+           </div>
+		  </div></a>
+		  <a href="代送下单_帮我取.html" style="text-decoration: none;"><div>
+		  <div class="top3" style="background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);">
+             <img style="padding-top: 40px" src="images/下单_帮我取.png" width="46px" height="50px"/>
+             <p style="font-size: 19px;padding-bottom: 40px;padding-top: 20px;color: aqua">帮我取</p>
+           </div>
+		  </div></a>
+		  <a href="代送下单_帮我排.html" style="text-decoration: none;"><div>
+		  <div class="top2" style="background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);">
+            <img style="padding-top: 40px" src="images/下单_帮我排.png" width="46px" height="50px"/>
+             <p style="font-size: 19px;padding-bottom: 40px;padding-top: 20px;color: aqua">帮我排</p>                         
+           </div>
+		  </div></a>
+	  </div>
+	  <div class="bang_wo_mai" style="background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);height: 180px;margin-bottom: 10px;">
+	     <img src="images/下单2.png" width="50px" height="50px"/>
+	     
+	      <div class="bang_wo_mai_frist" style="height: 45px;border: none;">
+			  <p style="font-size: 15px;padding-top: 15px;">排队时间:</p>
+      		<div style="height: 30px;width: 600px;background-color: #fff;float:right;margin-bottom: -30px;margin-right: 20px;margin-top: -25px;"> </div>
+		 </div>
+	     <div class="bang_wo_mai_second" style="height: 45px;border: none;">
+     		<p style="margin-top: 17px;font-size:15px;">排队时长:</p>
+      		<div style="height: 35px;width: 600px;background-color: #fff;float:right;margin-bottom: -30px;margin-right: 20px;margin-top: -30px;"> </div>
+		 </div>
+      <!-- <div class="bang_wo_mai_third" style="background-color: pink;height: 70px;">
+       <p style="font-size: 15px;margin-top: 25px;">收货电话:</p>
+      		<div style="height: 60px;width: 600px;background-color: yellow;float:right;margin-bottom: -30px;margin-right: 20px;margin-top: -38px;"> </div>
+		 </div>-->
+	     
+	  </div>
+	  <div class="bang_wo_mai" style="background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);height: 330px;">
+	  		<img style="float: left" src="images/下单3.png" width="50px" height="50px"/>
+	  		<div class="bang_wo_mai_third_left" style="margin-right: 20px;border: none;">
+	  			<div class="bang_wo_mai_third_left_left" style="float:left;">
+					<!--<div style="width: 180;height:35px;background-color: antiquewhite;margin-bottom: 10px;margin-top: 10px;">
+						<p style="float: left;padding: 10px;font-size: 14px;">订单距离:</p>
+						<p style="float: right;font-size:14px;padding-right: 60px;padding-top: 9.5px;">0公里</p>
+					</div>-->
+					<div style="width: 180;height:35px;margin-bottom: 10px;margin-top: 20px;">
+						<p style="float: left;padding: 10px;font-size: 14px;">跑腿费:</p>
+						<p style="float: right;font-size:14px;padding-right: 60px;padding-top: 9.5px;">0元</p>
+					</div>
+					<div style="width: 180;height:35px;margin-bottom: 8px">
+						<p style="float: left;padding: 10px;font-size: 14px;">手机号码:</p>
+						<div style="width: 140px;height: 20px;float: right;bmargin-top: 2.5px;padding-top: 10px;margin-right: 5px;">
+						<input placeholder="填写手机号码" style="height: 23px;width: 140px;padding-top: -15px;"></div>
+					</div>
+					<div style="width: 180;height:35px;margin-bottom: 10px">
+						<p style="float: left;padding: 10px;font-size: 14px;">图片验证:</p>
+						<div style="width: 70px;height: 20px;float: right;background-color:cadetblue;margin-top: 2.5px;padding-top: 10px;margin-right: 5px;">验证码图</div>
+						<div style="width: 65px;height: 20px;float:left;margin-top: 2.5px;padding-top: -5px;margin-right: 3px;"><input placeholder="写证码图" style="height: 26px;width: 65px;"></div>
+					</div>
+				<!--	/*<div style="width: 180;height:35px;margin-bottom: 10px">
+						<p style="float: left;padding: 10px;font-size: 14px;">图片验证:</p>
+						<div style="width: 70px;height: 20px;float: right;background-color:cadetblue;margin-top: 2.5px;padding-top: 10px;margin-right: 5px;">短信验证</div>
+						<div style="width: 65px;height: 20px;float:left;margin-top: 2.5px;padding-top: 10px;margin-right: 3px;">
+						<input placeholder="写短信码" style="height: 23px;width: 65px;"></div>
+					</div>*/-->
+					<div style="width: 180;height:35px;background-color: antiquewhite;margin-bottom: 10px;margin-top: 1px;">
+						<button style="font-size: 15px;padding-top: 4px;color: darkgoldenrod;margin-top:3px;">确定订单</button>
+					</div>				
+				</div>
+				
+			<div id="bang_wo_mai_third_left_left" style="float: right; width: 415px;border: none;">
+	  				<div id="allmap"></div>
+				</div>
+		  </div>
+	  </div>
+  </div>
+  <!--ad结束-->
+  
+	<div class="list_main">
+		</div> <!--news_type结束-->
+	<!--<div class="guan_yu_wo_meng">
+		
+  </div>-->
+<!--最外层wrap结束  -->
+<div class="copyright">
+  <div class="copyright_content">
+    <ul>
+      <li>关于
+        <ul>
+          <li>品牌故事</li>
+          <li>联系我们</li>
+          <li>加入我们</li>
+          <li>版权声明</li>
+        </ul>
+      </li>
+      <li>我是商家
+        <ul>
+          <li>合作申请</li>
+          <li>商务洽谈</li>
+          <li>提交资料</li>
+          <li>签订合同</li>
+        </ul>
+      </li>
+      <li>关注
+        <ul>
+          <li>新浪微博</li>
+          <li>腾讯微博</li>
+          <li>微信公众号</li>
+          <li>QQ空间</li>
+        </ul>
+      </li>
+      <li>留言
+        <ul>
+          <li>意见反馈</li>
+          <li>问题留言</li>
+          <li>功能特色</li>
+          <li>在线客服</li>
+        </ul>
+      </li>
+      <li><img src="images/weixin.png" alt="微信关注" width="30" height="27" />微信关注
+        <ul>
+          <li><img src="images/qrcode.jpg" alt="扫描关注跑腿交易平台官方微信" width="102" height="102" /></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+	</div>
+	</div>
+  <!--copyright_content结束--> 
+</body>
+</html>
+<script type="text/javascript">
+
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var map1 = new BMap.Map("allmap1");
+	map.centerAndZoom(new BMap.Point(119.828813, 30.29786), 15);
+	map1.centerAndZoom(new BMap.Point(119.828813, 30.29786), 12);
+
+	var p1 = new BMap.Point(119.828813, 30.29786);
+	var p2 = new BMap.Point(119.738813, 30.25786);
+
+	var driving = new BMap.DrivingRoute(map, {renderOptions:{map: map, autoViewport: true}});
+	driving.search(p1, p2);
+	var driving1 = new BMap.DrivingRoute(map1, {renderOptions:{map: map, autoViewport: true}});
+	driving1.search(p1, p2);
+	map.enableScrollWheelZoom(true); 
+	map1.enableScrollWheelZoom(true);
+</script>
